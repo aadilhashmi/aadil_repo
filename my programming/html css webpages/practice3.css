@@ -1,0 +1,120 @@
+*
+{ 
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    background: linear-gradient(60deg,rgb(95, 92, 92),rgb(236, 149, 149))
+} 
+nav{
+  background: linear-gradient(45deg,rgb(233, 71, 71),rgb(238, 202, 202));
+    margin: 5px;
+   padding: 20px;
+   text-align: right;
+   box-shadow: 0 0 10px black;
+   border-radius: 50px;
+   position: sticky;
+   top: 0;
+}
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+
+}
+nav a:hover{
+    background-color: rgb(235, 224, 224);
+    transition: ease-in-out 2s;
+    border-radius: 10px;
+    color: red;
+}
+div{
+    background: linear-gradient(45deg,rgb(233, 71, 71),rgb(238, 202, 202)) ;
+    height:200px;
+    margin:30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.boximg{
+width:300px;
+height: 200px;
+float: right;
+margin-left: 20px;
+}
+p{
+  
+    font-weight: bolder;
+    /* font-family: sans-serif; */
+    text-align: justify;
+    overflow: hidden;
+}
+table{
+    background-color: black;
+    color: black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    height:400px;
+    width: 400px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+tr:nth-child(1){
+    background-color: rgb(209, 40, 40);
+    color: black;
+}
+tr:nth-child(2){
+    background-color: rgb(236, 132, 132);
+    color: black;
+}
+tr:nth-child(3){
+    background-color: rgb(87, 85, 85);
+    color: black;
+}
+tr:nth-child(4){
+    background-color: rgb(241, 226, 89);
+    color: black;
+}
+    tr:nth-child(5){
+        background-color: rgb(131, 243, 103);
+        color: black;
+    
+}
+h1{
+    background-color: rgb(224, 158, 158);
+    border-radius: 45%;
+    margin-top: 10px;
+    width: 30%;
+    overflow: hidden;
+    text-shadow: 7px 7px 5px black ;
+    text-align: center;
+
+   
+
+}
+td{
+    text-align: center;
+}
+.apple{
+    background-color: rgb(243, 148, 153);
+    width: 200px;
+    padding: 20px;
+    margin: 2px;
+    border: 10px solid black;
+    text-align: justify;
+    margin-left: 40%;   
+    overflow: hidden;
+}
+footer{
+    background: linear-gradient(45deg, white, brown);
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+    font-family: cursive;
+}footer a{
+    margin:10px
+}

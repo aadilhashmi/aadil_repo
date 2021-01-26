@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title> login form</title>
+</head>
+<style>
+    header{
+        background-color: rgb(0,0,0,0.2);
+        height: 30px;
+        width: 200px;
+        margin-left: 45%;
+        border-radius: 20px;
+    }
+body{
+    background-image: url("./images/background.jpeg");
+    background-repeat: no-repeat;
+ text-align: center;
+    color:black;
+    margin:auto;
+    padding: 2px;
+}
+.box{padding: 50px;
+    margin-left: 40%;
+    background-color: rgb(0,0,0,0.5);
+    height: 700px;
+    width: 250px;
+    border-radius: 10px;
+}
+footer{
+background: linear-gradient(45deg,white, black);
+border-radius: 2px;
+box-shadow: 0,0,10px, black;
+padding:10px;
+margin-top: 10px;
+color: black;
+text-align: center;
+border-radius: 20px;
+
+}
+nav{
+  background: linear-gradient(45deg,rgb(49, 48, 48),rgb(238, 202, 202));
+    margin: 5px;
+   padding: 20px;
+   text-align: right;
+   box-shadow: 0 0 10px black;
+   border-radius: 50px;
+   position: sticky;
+   top: 0;
+}
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+
+}
+nav a:hover{
+    background-color: rgb(235, 224, 224);
+    transition: ease-in-out 2s;
+    border-radius: 10px;
+    color: rgb(17, 17, 17);
+}
+</style>
+<body>
+    <nav>
+    
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PAGES</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACTS</a>
+        </nav>
+   <header> <h2>Login Form</h2></header>
+    <form class="box">
+                <label>EMAIL ADD:</label>
+                <input type="text" placeholder="example@gmail.com">
+                <br><br>
+        
+                <label>PASSWORD:</label>
+                <input type="password" placeholder="password">
+    
+    <br><br>
+    <label>Select Technology:</label>
+    <select>
+    <optgroup label="FRONTEND">
+        <OPtion>HTML</OPtion>
+        <option>CSS</option>
+        <option>JAVASCRIPT</option>
+    </optgroup>
+    </select>
+    <br><br>
+    <label>Choose your tech:</label>
+    <select>
+    <optgroup label="BACKEND">
+        <OPtion>JAVA</OPtion>
+        <option>PYTHON</option>
+        <option>C++</option>    
+    </optgroup>
+</select>
+<br><br>
+<label> Howz Nandeds Weather</label>
+<input type="radio" name="cliamate" value="GOOD"> GOOD 
+<input type="radio" name="cliamate" value="BAD"> BAD
+<br><br>
+<label> Yours Hobbies</label>
+<input type="checkbox"  value="Eating">Eating
+<input type="checkbox"  value="coding">coding
+<input type="checkbox"  value="sleeping">sleeping
+<br><br>
+<label>Time</label>
+<input type="datetime-local" >
+<br><br>
+<label>select number</label>
+<input type="number" min="0" max="100" step="1">
+<br><br>
+<label>Your web URL</label>
+<input type="url">
+<br><br>
+<label>Choose your file</label>
+<input type="file">
+<br><br>
+<label>Your comments</label>
+<textarea  cols="30" rows="10" maxlength="100"></textarea>
+<br><br>
+<input type="submit" value="login"> 
+<input type="reset" value="reset">
+</form>  
+<footer>
+    <h3>
+        copy rights &copy;
+    </h3>
+    <h3>
+        All right reserved <sup>&reg;</sup>
+    </h3>
+    <h3>
+        devoloper and creater by Aadil hashmi
+    
+    </h3>
+    <h5>
+        Address: peerburhan nagar nanded 431605
+    </h5> <br>
+    <a href=""><i class="fa fa-facebook-official" style="color:#4267B2; font-size: 30px;"> facebook</i></a>
+           <a href=""><i class="fa fa-whatsapp" style="color:#25D366; font-size: 30px;"> whatsapp</i></a>
+           <a href=""><i class="fa fa-instagram" style="color: #8a3ab9; font-size: 30px;"> intagram</i></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+*
+{
+    margin: 0px;
+    padding:  0px;
+}
+body{
+    background-image: url(./images/PHOTO.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+
+.menu-bar{
+    background: rgb(94, 33, 33,0.5);
+    padding: 7px;
+    text-align:right;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+
+}
+.anchor{
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    margin-left: 80px;
+    font-size: 20px;
+    background: #000;
+    border-radius: 10px;
+    font-family: cursive;
+    
+
+}
+
+.menu-bar ul{
+    color: lemonchiffon;
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+ background-color: rgb(224, 109, 89);
+ text-align: center;
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background: rgb(94, 33, 33, 0.5);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+
+    display: block;
+    margin: 20px;
+
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+width: 100px;
+padding: 10px;
+border-bottom: 1px solid white;
+border-radius: 5px;
+text-align: center
+}
+}
+.menu-bar img{
+    width:180px;
+    height: 180px;
+    clip-path: circle(50% at 50% 50%);
+    float: left;
+    margin-top:50px;
+}
+
+/* cards css start from here */
+.cards{
+    width: 30%;
+    background-color: rgb(184, 88, 88,0.5);
+    border-radius: 20px;
+    margin-left:20px;
+     box-shadow: 10px 10px 20px black;
+     margin-top: 5%;
+     clear: both;
+     transition: all 0.8s linear;
+
+}
+.cards:hover{
+    transform: translateY(-60px);
+}
+.image img{
+    width: 70%;
+    margin-left: 50px ;
+    margin-top: 20px;
+}
+.tittle{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(197, 93, 93);
+    transition: ease-in-out 1s;
+
+
+}
+.cards2{
+    width: 30%;
+    background-color: rgb(184, 88, 88,0.5);
+    border-radius: 20px;
+    margin-top: -400px; 
+    margin-left: 35%;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.8s linear
+
+
+}
+.cards2:hover{
+    transform: translateY(-60px);
+}
+.image2 img{
+    width: 60%;
+    margin-left: 75px ;
+    margin-top: 30px;
+
+}
+.tittle2{
+    text-align: center;
+}
+.description2{
+    text-align: center;
+}
+.cards3{
+    width: 30%;
+    background-color: rgb(184, 88, 88,0.5);
+    border-radius: 20px;
+    margin-left: 68%;
+    margin-top: -420px;
+    box-shadow: 10px 10px 10px black;
+    transition: all 0.8s linear
+}
+.cards3:hover{
+    transform: translateY(-60px);
+}
+
+.tittle3{
+    text-align: center;
+}
+.description3{
+    text-align: center;
+}
+.image3 img{
+    width: 70%;
+    margin-left: 75px ;
+    margin-top: 30px;
+
+}   
+.heading{
+    border-radius: 50px;
+    background: rgb(184, 88, 88,0.5);
+    width: fit-content;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+footer{
+    background-color: rgb(184, 88, 88,0.5);
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer a{
+    margin:5px
+    
+}

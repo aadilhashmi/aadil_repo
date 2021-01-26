@@ -1,0 +1,38 @@
+body{
+    background-image: url(PHOTO.2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+nav{ 
+    padding: 10px;
+    text-align: right;
+
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+}
+nav a:hover
+{
+    background-color: cadetblue;
+    transition: ease-in-out 2s;
+}
+div{
+    background-color: rgb(128, 128, 167, 0.4);
+    border-radius: 10px;
+
+}
+h1{
+    color:blue;
+}
+footer{
+    background-color:rgb(128, 128, 167, 0.7);
+    border-radius: 10px;
+
+}
+img{
+    height: 200px;
+    width: 300px;
+}

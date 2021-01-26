@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model/float/table</title>
+</head>
+<style>
+#india{
+    background-color: lightgreen;
+    width: 200px;
+    padding: 20px;
+    margin: 2px;
+    border: 20px solid black;
+    text-align: justify;
+    /* float: left; */
+}
+img{
+    float:left;
+    
+
+}
+.float{
+    text-align: justify;
+}
+table{
+    padding: 20px;
+    width: 30%;
+    border: 2px solid black ;
+    border-radius: 10px;
+    box-shadow: -7px -7px 3px brown;
+    margin-top: 70px;
+}
+tr:nth-child(odd){
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+}
+td{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+th{
+    background-color:cyan;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    text-shadow: 7px 7px 5px black ;
+
+}
+</style>
+<body>
+    <div id="india">
+        <h2>
+            India 
+        </h2>
+        <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam at, ullam similique odio veritatis tempora magni cumque aut iure a ex temporibus dolore voluptatibus libero asperiores? Repellendus, id ipsum.
+        </p>
+
+    </div>
+    <!-- float -->
+    <h1>float elements</h1>
+    <p class="float"><img src="./images/fruit market.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores consectetur repellat illo laborum! Temporibus, fugiat quos quisquam maiores eum laborum ad error accusantium! Placeat possimus in eos animi magni, iusto ratione quisquam aut nam repellat obcaecati dolorum perferendis odit ad totam accusamus. Laudantium tenetur, veniam obcaecati laboriosam iusto numquam eum cupiditate animi ipsam minima molestias temporibus non voluptas voluptatibus error, eos assumenda saepe architecto debitis, culpa nulla vero consequuntur asperiores? Natus possimus assumenda similique rerum repellendus dolorem totam saepe, incidunt provident distinctio reiciendis odit exercitationem odio autem sed, optio quaerat neque sint qui perferendis veritatis voluptate ut expedita est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit sapiente temporibus numquam nesciunt dolor repudiandae fuga, tenetur autem doloribus quis magnam, molestiae saepe laudantium obcaecati eum distinctio omnis sunt!</p>
+<!-- TABLE -->
+ <table>
+     <!-- <caption>Employe Details</caption> -->
+     <tr>
+     <th>name</th>
+     <th>salary</th>
+     <th>designation</th>
+     </tr>
+     <tr>
+         <td>rizwan</td>
+         <td>40000</td>
+         <td>backend</td>
+     </tr>
+        <tr>
+            <td>aadil</td>
+            <td>30000</td>
+            <td>frontend</td>
+        </tr>
+        <tr>
+            <td>mazhar</td>
+            <td>50000</td>
+            <td>oracle</td>
+        </tr>
+        <tr>
+            <td>sam</td>
+            <td>30000</td>
+            <td>dbms</td>
+        </tr>
+          
+ </table>
+</body>
+</html>
