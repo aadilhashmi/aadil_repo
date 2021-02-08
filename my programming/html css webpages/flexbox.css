@@ -1,0 +1,24 @@
+.container{
+box-shadow:  0 0 10px black;
+border-style: outset;
+background: linear-gradient(25deg,rgb(18, 18, 245),rgb(29, 29, 29));
+display:flex ;
+padding: 50px 20px;
+width: 450px;
+justify-content: center;
+text-align: center;
+position: absolute;
+top: 7%;
+left: 35%;
+
+}
+.sub{
+box-shadow:  0 0 10px black;
+border-style: outset;
+background-color: rgb(204, 200, 195);
+width:400px ;
+height: 550px;
+border-radius: 50px;
+
+
+}
