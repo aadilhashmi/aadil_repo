@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>on click</title>
     <script>
-      function warn() {
-        alert("fields are empty please fill the form!!! ");
+       function warn() {
+           if(document.getElementById.('name').value =="") {
+                       alert("fields are empty please fill the form!!! ");
+
+           }
       }
     </script>
   </head>
   <body>
     <form>
       <label>EMAIL</label>
-      <input type="text" placeholder="email" />
+      <input for="name" type="text" placeholder="email" />
       <br />
       <br />
       <label>Pasword</label>
