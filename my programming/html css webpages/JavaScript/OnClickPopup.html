@@ -7,8 +7,11 @@
     <title>on click</title>
     <script>
       function warning() {
-        if (document.getElementById("email").value == "") {
+        if (document.getElementById("email", "pass").value == "") {
           alert("PLEASE FILL THE FORM");
+          document.getElementById("email").style.borderColor = "red";
+          document.getElementById("pass").style.borderColor = "red";
+
           return false;
         }
       }
@@ -21,10 +24,10 @@
       <br />
       <br />
       <label>pasword</label>
-      <input type="password" required />
+      <input id="pass" type="password" required />
       <br />
       <br />
-      <button onclick="warning()">Submit</button>
+      <button onclick="return warning()">Submit</button>
     </form>
   </body>
 </html>
