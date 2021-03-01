@@ -5,22 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>on click</title>
-    <script>
-      function warning() {
-        if (document.getElementById("email").value == "")
-          document.getElementById("pass").value == "";
-        document.getElementById("email").value = "Enter Email";
-        document.getElementById("pass").style.borderColor = "red";
-
-        {
-          alert("PLEASE FILL THE FORM");
-          return false;
-        }
-      }
-      function msg() {
-        document.getElementById("form").style.backgroundColor = "lightblue";
-      }
-    </script>
+    <script src="OnClickPopup.js"></script>
     <style>
       form {
         background-color: rgb(17, 91, 230);
@@ -43,7 +28,7 @@
     </style>
   </head>
   <body>
-    <form onmousemove="msg()" id="form">
+    <form onmousemove="image()" id="form">
       <label>Email:</label>
       <input id="email" type="text" required />
       <br />
