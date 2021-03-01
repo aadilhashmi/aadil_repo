@@ -7,21 +7,24 @@
     <title>on click</title>
     <script>
       function warning() {
-        alert("PLEASE FILL THE FORM");
+        if (document.getElementById("email").value == "") {
+          alert("PLEASE FILL THE FORM");
+          return false;
+        }
       }
     </script>
   </head>
   <body>
-    <form>
+    <form onclick="warning()">
       <label>EMAIL</label>
-      <input type="text" required />
+      <input id="email" type="text" required />
       <br />
       <br />
       <label>pasword</label>
       <input type="password" required />
       <br />
       <br />
-      <button onclick="warning()">Submit</button>
+      <button>Submit</button>
     </form>
   </body>
 </html>
