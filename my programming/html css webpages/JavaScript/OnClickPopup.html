@@ -7,35 +7,43 @@
     <title>on click</title>
     <script>
       function warning() {
-        if (document.getElementById("email", "pass").value == "") {
-          alert("PLEASE FILL THE FORM");
-          document.getElementById("email").style.borderColor = "red";
-          document.getElementById("pass").style.borderColor = "red";
+        if (document.getElementById("email").value == "")
+          document.getElementById("pass").value == "";
+        document.getElementById("email").value = "enter email";
+        document.getElementById("pass").style.borderColor = "red";
 
+        {
+          alert("PLEASE FILL THE FORM");
           return false;
         }
       }
     </script>
     <style>
       form {
-        background-color: aqua;
-        border: 1px solid black;
+        background-color: rgb(17, 91, 230);
+        border: 2px solid black;
+        box-shadow: 0 10px 10px 0;
+        border-radius: 10px;
         width: 200px;
         height: 200px;
         text-align: center;
         position: absolute;
         left: 40%;
+        top: 30%;
+      }
+      input {
+        border-radius: 5px;
       }
     </style>
   </head>
   <body>
     <form>
-      <label>EMAIL</label>
-      <input id="email" type="text" required />
+      <label>Email:</label>
+      <input id="email" type="text" />
       <br />
       <br />
-      <label>pasword</label>
-      <input id="pass" type="password" required />
+      <label>Pasword:</label>
+      <input id="pass" type="password" />
       <br />
       <br />
       <button onclick="return warning()">Submit</button>
