@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- calling function  when  user click -->
+    <script>
+      function msg1() {
+        alert("salman khan ");
+        alert("hiiii you click here on Ok  2");
+        alert("hiiii you click here on Ok  3");
+      }
+      function msg2() {
+        alert("shaikh salman");
+      }
+
+      function msg3() {
+        alert("testing");
+      }
+    </script>
+  </head>
+  <body>
+    <h2>javaScript in Body</h2>
+    <!-- <p id="demo"></p> -->
+    <button onClick="msg1()">OK</button>
+    <h2 onMouseOver="msg2()">hiiiiiiiiiiiiii</h2>
+    <span onclick="msg3()"> hiiiiiiiii </span>
+    <p id="demo">ddddddcheck</p>
+    <script>
+      document.getElementById("demo").innerHTML = "<b> ddddddcheck</b>";
+    </script>
+  </body>
+</html>
