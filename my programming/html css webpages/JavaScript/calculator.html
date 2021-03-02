@@ -9,9 +9,27 @@
       function Add() {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
-        alert("addition of number" + x);
+        x = parseInt(a) + parseInt(b);
+        alert("ADDITION OF NUMBERS    " + x);
       }
-      document.getElementById("demo").value = x;
+      function sub() {
+        a = document.getElementById("num1").value;
+        b = document.getElementById("num2").value;
+        x = parseInt(a) - parseInt(b);
+        alert("SUBRCTION OF NUMBERS   " + x);
+      }
+      function mult() {
+        a = document.getElementById("num1").value;
+        b = document.getElementById("num2").value;
+        x = parseInt(a) * parseInt(b);
+        alert("ADDITION OF NUMBERS   " + x);
+      }
+      function div() {
+        a = document.getElementById("num1").value;
+        b = document.getElementById("num2").value;
+        x = parseInt(a) / parseInt(b);
+        alert("ADDITION OF NUMBERS   " + x);
+      }
     </script>
   </head>
   <body>
@@ -26,10 +44,10 @@
       <br />
       <br />
       <button onClick="Add()">ADD</button>
-      <button>SUBSTRACT</button>
-      <button>DEVIDE</button>
-      <button>MULTIPLY</button>
-      <button>MOD</button>
+      <button onClick="sub()">SUBSTRACT</button>
+      <button onClick="mult()">MULT</button>
+      <button onClick="div()">DEVIDE</button>
+      <button onClick="mod()">MOD</button>
     </form>
   </body>
 </html>
