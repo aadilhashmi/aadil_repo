@@ -8,6 +8,7 @@
     <script>
       function Add() {
         a = document.getElementById("num1").value.type;
+        a = document.getElementById("num2").value.type;
         alert("addition of number" + x);
       }
       document.getElementById("demo").value = x;
@@ -16,12 +17,12 @@
   <body>
     <form>
       <label>Please Enter Your First Number:</label>
-      <input type="text" />
+      <input id="num1" type="text" />
       <br />
       <br />
 
       <label>Please Enter Your SecondNumber</label>
-      <input type="text" />
+      <input id="num2" type="text" />
       <br />
       <br />
       <button>ADD</button>
