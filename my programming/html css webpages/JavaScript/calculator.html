@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
       form {
-        background-color: rgb(17, 91, 230);
+        background-color: rgb(66, 199, 144);
         border: 2px solid black;
         box-shadow: 0 10px 10px 0;
         border-radius: 10px;
@@ -22,7 +22,7 @@
     </style>
     <script>
       function Add() {
-        a = document.getElementById("num1").value;
+        a = document.getElementsByName("aadil")[0].value;
         b = document.getElementById("num2").value;
         x = parseInt(a) + parseInt(b);
         alert("ADDITION OF NUMBERS    " + x);
@@ -56,7 +56,7 @@
   <body>
     <form>
       <label>Please Enter Your First Number:</label>
-      <input id="num1" type="text" />
+      <input name="aadil" type="text" />
       <br />
       <br />
 
