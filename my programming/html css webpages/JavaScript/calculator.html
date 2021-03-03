@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULATOR</title>
     <style>
-      form {
+      div {
         background-color: rgb(66, 199, 144);
         border: 2px solid black;
         box-shadow: 0 10px 10px 0;
@@ -27,10 +27,16 @@
     </style>
     <script>
       function Add() {
-        a = document.getElementsByid("num1").value;
+        a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
-        document.getElementById("result").value == Add();
+        if (a == "") {
+          alert("enter first number");
+        }
+        if (b == "") {
+          alert("enter second number");
+        }
         x = parseInt(a) + parseInt(b);
+        document.getElementById("total").value = x;
       }
       function sub() {
         a = document.getElementById("num1").value;
@@ -59,7 +65,7 @@
     </script>
   </head>
   <body>
-    <form>
+    <div>
       <label>Please Enter Your First Number:</label>
       <input id="num1" type="text" />
       <br />
@@ -76,8 +82,8 @@
       <button onClick="mod()">MOD</button>
       <br />
       <br />
-      <label><b> Result: </b></label>
-      <input id="result" />
-    </form>
+      <label><b>Total: </b></label>
+      <input id="total" type="text" />
+    </div>
   </body>
 </html>
