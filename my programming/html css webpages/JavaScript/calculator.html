@@ -27,10 +27,10 @@
     </style>
     <script>
       function Add() {
-        a = document.getElementsByid("num1")[0].value;
+        a = document.getElementsByid("num1").value;
         b = document.getElementById("num2").value;
+        document.getElementById("result" + x).value;
         x = parseInt(a) + parseInt(b);
-        alert("ADDITION OF NUMBERS    " + x);
       }
       function sub() {
         a = document.getElementById("num1").value;
@@ -74,6 +74,8 @@
       <button onClick="mult()">MULT</button>
       <button onClick="div()">DEVIDE</button>
       <button onClick="mod()">MOD</button>
+      <label>Result</label>
+      <input id="result" type="text" />
     </form>
   </body>
 </html>
