@@ -29,7 +29,7 @@
       function Add() {
         a = document.getElementsByid("num1").value;
         b = document.getElementById("num2").value;
-        document.getElementById("result" + x).value;
+        document.getElementById("result").value == Add();
         x = parseInt(a) + parseInt(b);
       }
       function sub() {
@@ -74,8 +74,10 @@
       <button onClick="mult()">MULT</button>
       <button onClick="div()">DEVIDE</button>
       <button onClick="mod()">MOD</button>
-      <label>Result</label>
-      <input id="result" type="text" />
+      <br />
+      <br />
+      <label><b> Result: </b></label>
+      <input id="result" />
     </form>
   </body>
 </html>
