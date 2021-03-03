@@ -41,26 +41,51 @@
       function sub() {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
+        if (a == "") {
+          alert("enter first number");
+        }
+        if (b == "") {
+          alert("enter second number");
+        }
+        document.getElementById("total").value = x;
+
         x = parseInt(a) - parseInt(b);
-        alert("SUBRCTION OF NUMBERS   " + x);
       }
       function mult() {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
+        if (a == "") {
+          alert("enter first number");
+        }
+        if (b == "") {
+          alert("enter second number");
+        }
         x = parseInt(a) * parseInt(b);
-        alert("ADDITION OF NUMBERS   " + x);
+        document.getElementById("total").value = x;
       }
       function div() {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
+        if (a == "") {
+          alert("enter first number");
+        }
+        if (b == "") {
+          alert("enter second number");
+        }
         x = parseInt(a) / parseInt(b);
-        alert("ADDITION OF NUMBERS   " + x);
+        document.getElementById("total").value = x;
       }
       function mod() {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
+        if (a == "") {
+          alert("enter first number");
+        }
+        if (b == "") {
+          alert("enter second number");
+        }
         x = parseInt(a) % parseInt(b);
-        alert("ADDITION OF NUMBERS   " + x);
+        document.getElementById("total").value = x;
       }
     </script>
   </head>
@@ -71,8 +96,13 @@
       <br />
       <br />
 
-      <label>Please Enter Your SecondNumber</label>
+      <label>Please Enter Your Second Number:</label>
       <input id="num2" type="text" />
+      <br />
+      <br />
+      <label><b>Total: </b></label>
+      <input id="total" type="text" />
+
       <br />
       <br />
       <button onClick="Add()">ADD</button>
@@ -82,8 +112,6 @@
       <button onClick="mod()">MOD</button>
       <br />
       <br />
-      <label><b>Total: </b></label>
-      <input id="total" type="text" />
     </div>
   </body>
 </html>
