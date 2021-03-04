@@ -30,6 +30,10 @@
         color: rgb(22, 22, 21);
         font-size: large;
       }
+      input {
+        border-radius: 10px;
+        padding: 5px;
+      }
     </style>
     <script>
       function Add() {
@@ -96,14 +100,14 @@
     </script>
   </head>
   <body>
-    <div>
+    <div name="calc">
       <label>NUMBER 1:</label>
-      <input id="num1" type="text" />
+      <input id="num1" type="text" name="display" />
       <br />
       <br />
 
       <label>NUMBER 2:</label>
-      <input id="num2" type="text" />
+      <input id="num2" type="text" onclick="calc.display.value+='0'" />
       <br />
       <br />
       <label>TOTAL:</label>
