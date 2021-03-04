@@ -97,13 +97,16 @@
         x = parseInt(a) % parseInt(b);
         document.getElementById("total").value = x;
       }
-      if (a == "") {
-        function zero() {
-          document.getElementById("num1").value = 0;
-        }
-      }
+      // zero  buttons  function
       function zero() {
-        document.getElementById("num2").value = 0;
+        a = document.getElementById("num1").value;
+        b = document.getElementById("num2").value;
+
+        if (a == "") {
+          document.getElementById("num1").value = 0;
+        } else {
+          document.getElementById("num2").value = 0;
+        }
       }
     </script>
   </head>
