@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-image: url(./wallimage.jpg);
+    }
+    div {
+      background-color: rgb(227, 233, 230, 0.5);
+      border: 2px solid black;
+      box-shadow: 0 10px 10px 0;
+      border-radius: 10px;
+      width: 350px;
+      height: 500px;
+      text-align: center;
+      position: absolute;
+      left: 37%;
+      top: 10%;
+      padding-top: 100px;
+    }
+    button {
+      padding: 10px;
+      margin: 5px;
+      width: 50px;
+      background-color: rgb(236, 231, 154);
+      color: rgb(22, 22, 21);
+      font-size: large;
+    }
+    input {
+      border-radius: 10px;
+      padding: 5px;
+    }
+  </style>
+  <script>
+    function out(z) {
+      a = document.getElementById("num1").value;
+      b = document.getElementById("num2").value;
+
+      if (a == "") {
+        document.getElementById("num1").value = z;
+      } else {
+        document.getElementById("num2").value = z;
+      }
+    }
+  </script>
+
+  <body>
+    <div>
+      <label>NUMBER 1:</label>
+      <input id="num1" type="text" />
+      <br />
+      <br />
+
+      <label>NUMBER 2:</label>
+      <input id="num2" type="text" />
+      <br />
+      <br />
+      <label>TOTAL:</label>
+      <input id="total" type="text" />
+      <br />
+      <br />
+      <button onclick="out(0)">0</button>
+      <button onclick="out(1)">1</button>
+      <button>2</button>
+      <button onClick="Add()">+</button>
+      <br />
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button onClick="sub()">-</button>
+      <br />
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button onClick="mult()">x</button>
+      <br />
+      <button>9</button>
+      <button onClick="div()">/</button>
+      <button onClick="mod()">%</button>
+      <br />
+      <br />
+    </div>
+  </body>
+</html>

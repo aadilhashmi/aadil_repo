@@ -97,15 +97,15 @@
         x = parseInt(a) % parseInt(b);
         document.getElementById("total").value = x;
       }
-      // zero  buttons  function
-      function zero() {
+
+      function out(z) {
         a = document.getElementById("num1").value;
         b = document.getElementById("num2").value;
 
         if (a == "") {
-          document.getElementById("num1").value = 0;
+          document.getElementById("num1").value = z;
         } else {
-          document.getElementById("num2").value = 0;
+          document.getElementById("num2").value = z;
         }
       }
     </script>
@@ -125,8 +125,8 @@
       <input id="total" type="text" />
       <br />
       <br />
-      <button onclick="zero()">0</button>
-      <button>1</button>
+      <button onclick="out(0)">0</button>
+      <button onclick="out(1)">1</button>
       <button>2</button>
       <button onClick="Add()">+</button>
       <br />
