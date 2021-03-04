@@ -97,24 +97,32 @@
         x = parseInt(a) % parseInt(b);
         document.getElementById("total").value = x;
       }
+      if (a == "") {
+        function zero() {
+          document.getElementById("num1").value = 0;
+        }
+      }
+      function zero() {
+        document.getElementById("num2").value = 0;
+      }
     </script>
   </head>
   <body>
-    <div name="calc">
+    <div>
       <label>NUMBER 1:</label>
-      <input id="num1" type="text" name="display" />
+      <input id="num1" type="text" />
       <br />
       <br />
 
       <label>NUMBER 2:</label>
-      <input id="num2" type="text" onclick="calc.display.value+='0'" />
+      <input id="num2" type="text" />
       <br />
       <br />
       <label>TOTAL:</label>
       <input id="total" type="text" />
       <br />
       <br />
-      <button>0</button>
+      <button onclick="zero()">0</button>
       <button>1</button>
       <button>2</button>
       <button onClick="Add()">+</button>
