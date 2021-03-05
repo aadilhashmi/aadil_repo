@@ -22,15 +22,20 @@
       var sub = 0;
 
       function count() {
-          if()
         add += 1;
         document.getElementById("num").value = add;
         sub = add;
+        if (add == 20) {
+          alert("MAX LIMIT REACHED");
+        }
       }
       function subcount() {
         sub -= 1;
         document.getElementById("num").value = sub;
         add = sub;
+        if (sub == -20) {
+          alert("MAX LIMIT REACHED");
+        }
       }
     </script>
     <button onclick="count()">Add Me</button>
