@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    body {
+      background-image: url(./wallimage.jpg);
+    }
+    div {
+      background-color: rgb(227, 233, 230, 0.5);
+      border: 2px solid black;
+      box-shadow: 0 10px 10px 0;
+      border-radius: 10px;
+      width: 350px;
+      height: 200px;
+      text-align: center;
+      position: absolute;
+      left: 37%;
+      top: 10%;
+      padding-top: 20px;
+    }
+  </style>
   <script>
-    var numb = document.getElementById("num").value;
     function table() {
+      var numb = document.getElementById("num").value;
       for (a = 1; a <= 10; a++) {
         document.write(numb + "*" + a + "=" + a * numb + "</br>");
       }
     }
   </script>
   <body>
-    <input type="text " id="num" />
-    <button onClick="table()">enter</button>
+    <div>
+      <h1>ENTER ANY NUMBER FOR TABLE</h1>
+      <input type="text " id="num" />
+      <button onClick="table()">enter</button>
+    </div>
   </body>
 </html>
