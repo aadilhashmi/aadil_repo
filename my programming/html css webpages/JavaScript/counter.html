@@ -6,5 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      var add = 0;
+
+      function count() {
+        add += 1;
+        document.getElementById("num").value = add;
+      }
+    </script>
+    <button onclick="count()">Add Me</button>
+    <input id="num" type="text" />
+  </body>
 </html>
