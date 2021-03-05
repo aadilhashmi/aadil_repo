@@ -9,16 +9,11 @@
   <script>
     function discount() {
       x = document.getElementById("num").value;
-      if (x <= 10) {
-        document.getElementById("sub").innerHTML = " YOU WILL GET 10% DISCOUNT";
-      } else if (x > 10 && x <= 20) {
-        document.getElementById("sub").innerHTML = " YOU WILL GET 20% DISCOUNT";
-      } else if (x > 20 && x <= 40) {
-        document.getElementById("sub").innerHTML = " YOU WILL GET 40% DISCOUNT";
-      } else {
-        document.getElementById("sub").innerHTML =
-          " YOU WILL GET 100% DISCOUNT";
-      }
+      if (x>0 && x <= 10) disc=10;
+      else if (x > 10 && x <= 20) disc=40;
+      else if (x > 20 && x <= 40) disc=50;
+      else disc="not eligible...!!!!";
+      document.getElementById("sub").innerHTML=("you will get <b>"+disc+"%</b>");
     }
   </script>
   <body>
