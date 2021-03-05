@@ -14,10 +14,12 @@
       function count() {
         add += 1;
         document.getElementById("num").value = add;
+        sub = add;
       }
       function subcount() {
         sub -= 1;
         document.getElementById("num").value = sub;
+        add = sub;
       }
     </script>
     <button onclick="count()">Add Me</button>
