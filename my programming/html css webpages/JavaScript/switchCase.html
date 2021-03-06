@@ -12,16 +12,16 @@
 
             switch (colname) {
                 case "red":
-                    document.getElementById("print").innerHTML = " <b>red<b>"
+                    document.getElementById("red").innerHTML = " <b>YOU ARE CHOOSING RED COLOR<b>"
                     break;
-                case "salman ":
-                    document.getElementById("print").innerHTML = "He is learning Node Js.";
+                case "blue":
+                    document.getElementById("blue").innerHTML = "<b>YOU ARE CHOOSING BLUE COLOR<b>";
                     break;
-                case "zahour":
-                    document.getElementById("print").innerHTML = "He is learning React Js.";
+                case "green":
+                    document.getElementById("green").innerHTML = "<b>YOU ARE CHOOSING GREEN COLOR<b>";
                     break;
                     default:
-                        document.getElementById("print").innerHTML = "He is going to learn HTML CSS.";
+                        document.getElementById("white").innerHTML = "<b>NO COLOR CHOOSE<b>";
             }
         }
     </script>
@@ -29,7 +29,10 @@
 <body>
     <input id="col" type="text">
     <button onclick="color()">Click</button>
-    <p id="print" ></p>
+    <p id="red" style=color:red ></p>
+    <p id="blue" style=color:blue ></p>
+    <p id="green" style=color:green ></p>
+    <p id="white"></p>
    
 </body>
 </html>
