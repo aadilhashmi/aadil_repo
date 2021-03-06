@@ -8,11 +8,11 @@
 </head>
  <script>
         function color() {
-            var colname = document.getElementById("swtcon").value;
+            var colname = document.getElementById("col").value;
 
             switch (colname) {
                 case "red":
-                    document.getElementById("print").innerHTML = "";
+                    document.getElementById("print").innerHTML = " <b>red<b>"
                     break;
                 case "salman ":
                     document.getElementById("print").innerHTML = "He is learning Node Js.";
@@ -29,7 +29,7 @@
 <body>
     <input id="col" type="text">
     <button onclick="color()">Click</button>
-    <p id="print"></p>
+    <p id="print" ></p>
    
 </body>
 </html>
