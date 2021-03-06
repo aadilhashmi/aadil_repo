@@ -6,11 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
+ <script>
+        function color() {
+            var colname = document.getElementById("swtcon").value;
 
-</script>
+            switch (colname) {
+                case "red":
+                    document.getElementById("print").innerHTML = "";
+                    break;
+                case "salman ":
+                    document.getElementById("print").innerHTML = "He is learning Node Js.";
+                    break;
+                case "zahour":
+                    document.getElementById("print").innerHTML = "He is learning React Js.";
+                    break;
+                    default:
+                        document.getElementById("print").innerHTML = "He is going to learn HTML CSS.";
+            }
+        }
+    </script>
+
 <body>
-
-    
+    <input id="col" type="text">
+    <button onclick="color()">Click</button>
+    <p id="print"></p>
+   
 </body>
 </html>
