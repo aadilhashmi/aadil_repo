@@ -12,13 +12,13 @@
 
             switch (colname) {
                 case "red":
-                    document.getElementById("print").innerHTML = " <b style= color:red >YOU ARE CHOOSING RED COLOR<b>"
+                    document.getElementById("print").innerHTML = " <img src=./red.jpg>"
                     break;
                 case "blue":
-                    document.getElementById("print").innerHTML = "<b style= color:blue>YOU ARE CHOOSING BLUE COLOR<b>";
+                    document.getElementById("print").innerHTML = "<img src=./blue.jpg>"
                     break;
                 case "green":
-                    document.getElementById("print").innerHTML = "<b style= color:green>YOU ARE CHOOSING GREEN COLOR<b>";
+                    document.getElementById("print").innerHTML = "<img src=./green.png>"
                     break;
                     default:
                         document.getElementById("print").innerHTML = "<b>NO COLOR CHOOSE<b>";
@@ -30,5 +30,6 @@
     <input id="col" type="text">
     <button onclick="color()">Click</button>
     <p id="print" ></p>
+
 </body>
 </html>
