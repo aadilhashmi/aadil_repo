@@ -8,9 +8,9 @@
 </head>
  <script>
         function color() {
-            var colname = document.getElementById("col").value;
+            var colnum = document.getElementById("col").value;
 
-            switch (colname) {
+            switch (colnum) {
                 case "0":
                     document.getElementById("print").innerHTML = " <img src=./red.jpg>"
                     break;
@@ -21,7 +21,8 @@
                     document.getElementById("print").innerHTML = "<img src=./green.png>"
                     break;
                     default:
-                        document.getElementById("print").innerHTML = "<b>NO COLOR CHOOSE<b>";
+                        alert("PLEASE ENTER NUMBER")
+                        // document.getElementById("print").innerHTML = "<b>PLEASE ENTER!!!!!!<b>";
             }
         }
     </script>
