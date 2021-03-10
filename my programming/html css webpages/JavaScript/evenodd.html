@@ -6,21 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVEN ODD</title>
   </head>
-  <script>
-    function msg() {
-      n = Number(document.getElementById("input").value);
-      if (n % 2 == 0) {
-        // alert("number is even");
-        document.getElementById("demo").innerHTML = "number is even";
-      } else {
-        // alert("number is odd");
-        document.getElementById("demo").innerHTML = "number is odd+";
-      }
-    }
-  </script>
+ <script src="evenodd.js"></script>
   <body>
-    <input type="text" id="input" />
+    <input  type="text" id="input" />
     <button onclick="msg()">click</button>
     <p id="demo"></p>
+    
   </body>
 </html>
