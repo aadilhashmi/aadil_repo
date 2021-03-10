@@ -7,13 +7,18 @@
     <title>strings lenght</title>
 </head>
 <script>
-    function msg(){
- n= document.getElementById("demo").value;
- 
-    }
+   function msg() {
+  var str = document.getElementById("demo").value;
+  var n = str.length;
+  document.getElementById("len").innerHTML = n;
+}
+
 </script>
 <body>
     <input id="demo" type="'text'" >
+    <button onclick="msg()">
+        enter
+    </button>
 <p id="len"></p>
 </body>
 </html>
