@@ -10,8 +10,14 @@
    function msg() {
   var str = document.getElementById("demo").value;
   var n = str.length;
-  var x="hi i am aadiil hashmi"
   document.getElementById("len").innerHTML = n +   "is Lenght Of Your Name";
+  document.getElementById("len").innerHTML = name.indexOf("syed");
+  if(-1== name.indexOf("syed")){
+      document.getElementById("len").innerHTML="please proccess further";
+  }
+  else{
+       document.getElementById("len").innerHTML="Your not eligible for zakat";
+  }
 }
 
 </script>
@@ -21,5 +27,6 @@
         enter
     </button>
 <p id="len"></p>
+
 </body>
 </html>
