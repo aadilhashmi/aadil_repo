@@ -7,7 +7,11 @@
     <title>String method</title>
 </head>
 <script>
-    
+    function msg(){
+var str= document.getElementById("demo").value;
+document.getElementById("len").innerHTML= str.search("aadil")
+document.getElementById("len").innerHTML= str.slice(1,3)
+    }
 </script>
 <body>
  <input id="demo" type="'text'" >
