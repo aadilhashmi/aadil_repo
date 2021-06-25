@@ -7,4 +7,4 @@ const findtwiceexists = (str, subsrt) => {
   return cntsubstr;
 };
 
-console.log(findtwiceexists("AADIL HASHMI", "A"));
+console.log(findtwiceexists("AADILHASHMI", "A"));
