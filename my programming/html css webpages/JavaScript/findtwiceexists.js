@@ -1,15 +1,16 @@
 const findtwiceexists = (str, subsrt) => {
   const arrStr = str.split(" ");
-
   let cntsubstr = 0;
-  for (let i = 0; i < arrStr.lenght; i++) {
-    if (arrStr[i] === subsrt) {
-      cntsubstr = cntsubstr + 1;
-    }
-  }
+  arrStr.forEach((element) => {
+    if (element === subsrt) cntsubstr = cntsubstr + 1;
+  });
 
-  console.log(cntsubstr);
+  return cntsubstr;
 };
-findtwiceexists(
-  "we are here to learn fullstack. we are from nanded maharashtra."
+
+console.log(
+  findtwiceexists(
+    "we are here to learn fullstack. we are from nanded maharashtra.",
+    "we are"
+  )
 );
