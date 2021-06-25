@@ -4,7 +4,6 @@ const findtwiceexists = (str, subsrt) => {
   arrStr.forEach((element) => {
     if (element === subsrt) cntsubstr = cntsubstr + 1;
   });
-
   return cntsubstr;
 };
 
