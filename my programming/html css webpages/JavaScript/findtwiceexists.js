@@ -8,9 +8,4 @@ const findtwiceexists = (str, subsrt) => {
   return cntsubstr;
 };
 
-console.log(
-  findtwiceexists(
-    "we are here to learn fullstack. we are from nanded maharashtra.",
-    "we are"
-  )
-);
+console.log(findtwiceexists("AADIL HASHMI", "A"));
