@@ -22,7 +22,7 @@ body {
   text-align: center;
 }
 .box h1 {
-  color: rgba(110, 167, 64, 0.789);
+  color: rgba(55, 56, 54, 0.789);
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -44,7 +44,7 @@ body {
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
   width: 280px;
-  border-color: #2ecc71;
+  border-color: #050505;
 }
 .box input[type="submit"] {
   border: 0;
