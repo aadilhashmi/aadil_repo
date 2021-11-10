@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #acd2fb;
+  background-image: linear-gradient(
+      53deg,
+      rgba(249, 249, 249, 0.04) 0%,
+      rgba(249, 249, 249, 0.04) 8%,
+      rgba(133, 133, 133, 0.04) 8%,
+      rgba(133, 133, 133, 0.04) 100%
+    ),
+    linear-gradient(
+      152deg,
+      rgba(201, 201, 201, 0.04) 0%,
+      rgba(201, 201, 201, 0.04) 39%,
+      rgba(25, 25, 25, 0.04) 39%,
+      rgba(25, 25, 25, 0.04) 100%
+    ),
+    linear-gradient(
+      346deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 39%,
+      rgba(136, 136, 136, 0.04) 39%,
+      rgba(136, 136, 136, 0.04) 100%
+    ),
+    linear-gradient(
+      9deg,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.04) 65%,
+      rgba(244, 244, 244, 0.04) 65%,
+      rgba(244, 244, 244, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(219, 194, 57), rgb(208, 34, 16));
+}
+
+.main-div {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-color: #a4c0df;
+  border-radius: 10px;
+  clip-path: circle(23.2% at 100% 0);
+  transition: all 0.3s;
+}
+
+.main-div h1 {
+  margin: 30px 0;
+  color: rgb(90, 79, 68);
+}
+
+.main-div p {
+  color: #fff;
+  line-height: 150%;
+}
+
+.main-div h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.main-div:hover {
+  clip-path: circle(141.4% at 100% 0);
+}
