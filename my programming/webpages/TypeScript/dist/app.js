@@ -79,6 +79,11 @@ function addNum(x, y) {
     return x + y;
 }
 console.log(addNum(1, 2));
+// another example for function
+let myAdd = function (x, y) {
+    return x + y;
+};
+console.log(myAdd(5, 5));
 //Void
 function log(massage) {
     console.log(massage);
@@ -91,3 +96,12 @@ const userdetail = {
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
 console.log(add(2, 8));
+// string literals --->> will recieve only string value thats assign to it .
+let say;
+say = "check";
+// also we can assign undefined and null
+say = undefined;
+say = null;
+// string literal with union i.e  single pipe symbol (|)
+let xyz;
+xyz = "Rizwan";
